@@ -43,6 +43,24 @@ if (loginClose) {
 /*=============== ADD SHADOW HEADER ===============*/
 
 /*=============== HOME SWIPER ===============*/
+let swiperHome = new Swiper('.home__swiper', {
+   loop: true,
+   spaceBetween: -24,
+   grabCursor: true,
+   slidesPerView: 'auto',
+   centeredSlides: 'auto',
+
+   autplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+   },
+
+   breakpoints: {
+      1220: {
+         spaceBetween: -32,
+      },
+   },
+});
 
 /*=============== FEATURED SWIPER ===============*/
 
